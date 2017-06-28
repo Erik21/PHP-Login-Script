@@ -6,7 +6,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>VR Platform - Letink Design</title>
+<title></title>
+<!-- <title>VR Platform - Letink Design</title> -->
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>

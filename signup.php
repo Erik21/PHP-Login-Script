@@ -3,6 +3,15 @@
 ?>
 
 <?php
+
+	$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+	if (strpos($url, 'error=empty') !== false) {
+		echo "Vul alle velden in!";
+	}
+	elseif (strpos($url, 'error=username') !== false) {
+		echo "Gebruikersnaam bestaat al";
+	}
+
 	if (isset($_SESSION['id'])) {
 		echo $_SESSION['id'];
 	} else {
