@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include 'header.php';
 ?>
 
@@ -28,6 +28,7 @@
 		echo 	"<form action='includes/signup.inc.php' method='POST'>
 					<input type='text' name='first' placeholder='Voornaam'><br>
 					<input type='text' name='last' placeholder='Achternaam'><br>
+					<input type='text' name='email' placeholder='Email Address'><br>
 					<input type='text' name='uid' placeholder='Gebruikersnaam'><br>
 					<input type='password' name='pwd' placeholder='Wachtwoord'><br>
 					<button type='submit'>Account aanmaken</button>

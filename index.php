@@ -5,10 +5,14 @@
 
 
 <?php
-
 	if (isset($_SESSION['u_uid'])) {
 		echo "<br> Gebruikersnaam = ";
 		echo $_SESSION ['u_uid'];
+	}
+
+	if (isset($_SESSION['u_email'])) {
+		echo "<br> Email = ";
+		echo $_SESSION ['u_email'];
 	}
 
 	if (isset($_SESSION['id'])) {

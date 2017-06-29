@@ -30,6 +30,7 @@ else {
  else {
   //echo "You are logged in!";
   $_SESSION['u_uid'] = $row['uid'];
+    $_SESSION['u_email'] = $row['email'];
   $_SESSION['id'] = $row['id'];
  }
 

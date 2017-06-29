@@ -7,6 +7,7 @@ $first = $_POST['first'];
 $last = $_POST['last'];
 $uid = $_POST['uid'];
 $pwd = $_POST['pwd'];
+$email = $_POST['email'];
 
 if (empty($first))
 {
@@ -42,7 +43,7 @@ else {
 		exit();
 	} else {
 		$hashed_password = password_hash($pwd, PASSWORD_DEFAULT);
-		$sql = "INSERT INTO user (first, last, uid, pwd) VALUES ('$first', '$last', '$uid', '$hashed_password')";
+		$sql = "INSERT INTO user (first, last, uid, pwd, email) VALUES ('$first', '$last', '$uid', '$hashed_password', '$email')";
 		$result = mysqli_query($conn, $sql);
 
 		header("Location: ../index.php");
