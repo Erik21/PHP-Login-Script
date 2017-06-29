@@ -13,7 +13,7 @@
 	}
 
 	if (isset($_SESSION['id'])) {
-		echo $_SESSION['id'];
+		//echo
 	} else {
 		echo "Je bent niet ingelogt!";
 	}

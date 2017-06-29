@@ -16,7 +16,7 @@ $hash = password_verify($pwd, $hash_pwd);
 
 if ($hash == 0) {
  header("Location: ../index.php?error=empty");
- exit(); 
+ exit();
 }
 else {
 
@@ -29,6 +29,7 @@ else {
  }
  else {
   //echo "You are logged in!";
+  $_SESSION['u_uid'] = $row['uid'];
   $_SESSION['id'] = $row['id'];
  }
 

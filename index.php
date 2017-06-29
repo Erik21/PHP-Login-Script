@@ -1,12 +1,22 @@
-<?php 
+<?php
 	include 'header.php';
 ?>
 
 
+
 <?php
+
+	if (isset($_SESSION['u_uid'])) {
+		echo "<br> Gebruikersnaam = ";
+		echo $_SESSION ['u_uid'];
+	}
+
 	if (isset($_SESSION['id'])) {
-		echo $_SESSION['id'];
-	} else {
+		echo "<br> ID = ";
+		echo $_SESSION ['id'];
+	}
+
+	 else {
 		echo "Je bent niet ingelogd!";
 	}
 ?>
