@@ -30,7 +30,10 @@ else {
  else {
   //echo "You are logged in!";
   $_SESSION['u_uid'] = $row['uid'];
-    $_SESSION['u_email'] = $row['email'];
+  $_SESSION['u_email'] = $row['email'];
+  $_SESSION['u_pcode'] = $row['pcode'];
+  $_SESSION['u_cname'] = $row['cname'];
+  $_SESSION['u_website'] = $row['website'];
   $_SESSION['id'] = $row['id'];
  }
 

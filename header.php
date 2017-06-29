@@ -18,13 +18,13 @@
 			<li><a href="index.php">Home</a></li>
 			<?php
 
-				if(isset($_SESSION['id'])){
-					echo $_SESSION['id'];
+				if(isset($_SESSION['u_uid'])){
+					echo $_SESSION['u_uid'];
 					echo	"<form action='includes/logout.inc.php'>
 									<button>Log uit</button>
 								</form>";
 				}
-				
+
 				else {
 					echo 	"<form action='includes/login.inc.php' method='POST'>
 									<input type='text' name='uid' placeholder='Gebruikersnaam'>
