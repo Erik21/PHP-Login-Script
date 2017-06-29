@@ -23,6 +23,7 @@
 					echo	"<form action='includes/logout.inc.php'>
 									<button>Log uit</button>
 								</form>";
+					echo "<li><a href='userpanel.php'>Mijn Account</a></li>";
 				}
 
 				else {
@@ -31,10 +32,11 @@
 									<input type='password' name='pwd' placeholder='Wachtwoord'>
 									<button type='submit'>Inloggen</button>
 				  			</form>";
+				echo		"<li><a href='signup.php'>Aanmelden</a></li>";
 				}
 
 			 ?>
-			<li><a href="signup.php">Aanmelden</a></li>
+
 		</ul>
 	</nav>
 </header>
